@@ -1,0 +1,399 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #232322;
+    padding: 10px 20px;
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nazad{
+    position: absolute;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background: transparent;
+    margin-left:32px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-weight:400;
+    font-family: 'Inspiration';
+    font-size: 48px;
+    position: absolute;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%);
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 40px 0 20px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 25px 0 15px;
+    color: #ffffff;
+}
+
+.category {
+    margin-bottom: 40px;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.item-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+}
+
+.item-image {
+    height: 350px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-details {
+    padding: 15px;
+}
+
+
+.item-name {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+
+.item-price {
+    font-weight: 700;
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.skidka {
+    font-weight: 700;
+    font-size: 18px;
+    color: #d61c1c;
+    margin-bottom: 10px;
+
+}
+
+.ofer{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 0 auto;
+}
+
+.item-tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #555;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px 0;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        font-size: 42px;
+    }
+    
+    .nazad {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    .items-container {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 20px;
+    }
+    
+    .item-image {
+        height: 350px;
+    }
+    
+    .ofer {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 50px;
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        font-size: 36px;
+    }
+    
+    .nazad {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        margin: 30px 0 15px;
+    }
+    
+    h3 {
+        font-size: 17px;
+        margin: 20px 0 12px;
+    }
+    
+    .items-container {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 15px;
+    }
+    
+    .item-image {
+        height: 350px;
+    }
+    
+    .item-details {
+        padding: 12px;
+    }
+    
+    .item-name {
+        font-size: 15px;
+    }
+    
+    .item-price, .skidka {
+        font-size: 16px;
+    }
+    
+    .ofer {
+        gap: 50px;
+    }
+    
+    hr {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        height: 45px;
+        padding: 8px 10px;
+    }
+    
+    .logo {
+        font-size: 30px;
+    }
+    
+    .nazad {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    
+    main {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+    
+    h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin: 25px 0 12px;
+    }
+    
+    h3 {
+        font-size: 16px;
+        margin: 18px 0 10px;
+    }
+    
+    .items-container {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 12px;
+    }
+    
+    .item-image {
+        height: 350px;
+    }
+    
+    .item-details {
+        padding: 10px;
+    }
+    
+    .item-name {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .item-price, .skidka {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    
+    .ofer {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .item-tag {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+    
+    hr {
+        margin: 25px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        height: 40px;
+    }
+    
+    .logo {
+        font-size: 26px;
+    }
+    
+    .nazad {
+        font-size: 13px;
+        margin-left: 8px;
+    }
+    
+    h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    h2 {
+        font-size: 17px;
+        margin: 20px 0 10px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        margin: 15px 0 8px;
+    }
+    
+    .items-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .item-image {
+        height: 350px;
+    }
+    
+    .item-details {
+        padding: 12px;
+    }
+    
+    .item-name {
+        font-size: 16px;
+    }
+    
+    .item-price, .skidka {
+        font-size: 15px;
+    }
+    
+    .ofer {
+        gap: 20px;
+    }
+    
+    hr {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo {
+        font-size: 24px;
+    }
+    
+    .nazad {
+        font-size: 12px;
+    }
+    
+    h1 {
+        font-size: 18px;
+    }
+    
+    .item-image {
+        height: 350px;
+    }
+    
+    .ofer {
+        gap: 15px;
+    }
+}
